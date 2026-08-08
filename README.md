@@ -4,9 +4,16 @@ Official press kit site for **Band NYX** — rock, melody, energy.
 
 ## Live site
 
-After GitHub Pages is enabled, the site is published at:
-
 **https://vishanthlynn.github.io/bandNyx/**
+
+### Enable GitHub Pages (required once)
+
+1. Open **Settings → Pages** on the repo.
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Choose branch **`gh-pages`**, folder **`/ (root)`**, then **Save**.
+4. Wait 2–5 minutes after the Actions workflow succeeds.
+
+The workflow publishes the `gh-pages` branch on every push to `main`.
 
 ## Local preview
 

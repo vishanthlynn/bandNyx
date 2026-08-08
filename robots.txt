@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vishanthlynn.github.io/bandNyx/sitemap.xml
