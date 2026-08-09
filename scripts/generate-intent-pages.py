@@ -90,6 +90,30 @@ INTENTS = [
      "Band Nyx travels for destination weddings and resort events across South India when dates align.",
      ["band for destination wedding", "destination wedding live music", "resort event band"],
      ["Resorts on venue press sheet", "International show on timeline (Charlotte USA)", "Professional travel coordination"]),
+    ("wedding-band-guntur", "Wedding band Guntur — Band Nyx", "Wedding band in Guntur",
+     "Band Nyx travels from Vijayawada for wedding receptions and celebrations in Guntur.",
+     ["wedding band Guntur", "live band wedding Guntur", "Telugu wedding band Guntur"],
+     ["Guntur on official city list", "Wedding venues on press kit", "Telugu and Bollywood sets"]),
+    ("wedding-band-tirupati", "Wedding band Tirupati — Band Nyx", "Wedding band in Tirupati",
+     "Band Nyx performs wedding receptions and private events in Tirupati and nearby areas.",
+     ["wedding band Tirupati", "live music wedding Tirupati"],
+     ["Tirupati performances listed", "Destination-friendly travel", "Six-piece band"]),
+    ("college-fest-band-vijayawada", "College fest band Vijayawada — Band Nyx", "College fest band in Vijayawada",
+     "Band Nyx is built for campus festivals and Battle of Bands stages in the Vijayawada region.",
+     ["college fest band Vijayawada", "band for college event Vijayawada", "university live band Vijayawada"],
+     ["Battle of Bands wins", "50+ press kit performances", "Crowd engagement"]),
+    ("live-band-booking-andhra-pradesh", "Live band booking Andhra Pradesh — Band Nyx", "Live band booking in Andhra Pradesh",
+     "Book Band Nyx for weddings, fests and corporate events across Andhra Pradesh.",
+     ["live band booking Vijayawada", "live band booking Hyderabad", "band booking Andhra Pradesh", "hire live band"],
+     ["Official phones on website", "Press kit services list", "Instagram @band.nyx"]),
+    ("professional-live-band-vijayawada", "Professional live band Vijayawada — Band Nyx", "Professional live band in Vijayawada",
+     "Band Nyx is a six-piece professional live band based in Vijayawada for fests, weddings and corporate clients.",
+     ["professional live band Vijayawada", "best live band Vijayawada", "top bands Vijayawada"],
+     ["Home base Vijayawada", "Award-winning fest history", "Telugu Hindi English"]),
+    ("professional-live-band-hyderabad", "Professional live band Hyderabad — Band Nyx", "Professional live band in Hyderabad",
+     "Band Nyx delivers professional six-piece live shows for Hyderabad events with travel support.",
+     ["professional live band Hyderabad", "best live band Hyderabad", "hire band Hyderabad"],
+     ["Hyderabad city performances", "Corporate and wedding capable", "Full lineup"]),
 ]
 
 
@@ -144,7 +168,7 @@ def render_page(slug, title, h1, intro, queries, bullets):
 {bl}
       </ul>
       <h2>Related</h2>
-      <p><a href="/best-bands-vijayawada">Bands Vijayawada</a> · <a href="/best-bands-hyderabad">Bands Hyderabad</a> · <a href="/booking">Booking</a> · <a href="/live">Performances</a> · <a href="/members">Members</a></p>
+      <p><a href="/best-bands-vijayawada">Bands Vijayawada</a> · <a href="/best-bands-hyderabad">Bands Hyderabad</a> · <a href="/booking">Booking</a> · <a href="/live">Performances</a> · <a href="/members">Members</a> · <a href="/site-index.html">All pages</a></p>
       {BOOK}
     </div>
   </main>
@@ -169,7 +193,47 @@ def main():
                   {"bands-near-me-andhra-pradesh"})
     events = sorted(f"events/{f.stem}" for f in (ROOT / "events").glob("*.html"))
     intents = [i[0] for i in INTENTS]
-    all_paths = list(dict.fromkeys(static + city + intents + events))
+    all_paths = list(dict.fromkeys(static + city + intents + events + ["site-index"]))
+
+    # HTML site index for crawlers (not linked from press kit nav)
+    sections = [
+        ("Press kit", static),
+        ("City searches", city),
+        ("Services & booking intent", intents),
+        ("Events", events),
+    ]
+    links_html = []
+    for heading, paths in sections:
+        links_html.append(f"      <h2>{heading}</h2>\n      <ul>")
+        for p in paths:
+            loc = "/" if p == "" else (f"/{p}" if not p.startswith("events/") else f"/{p}")
+            label = "Home — press kit" if p == "" else p.replace("-", " ").replace("/", " — ")
+            links_html.append(f'        <li><a href="{loc}">{esc(label)}</a></li>')
+        links_html.append("      </ul>")
+    site_index = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Band Nyx — site index (all public pages)</title>
+  <meta name="description" content="Complete index of Band Nyx official pages: Vijayawada live band, Hyderabad bookings, weddings, college fests, corporate events." />
+  <link rel="canonical" href="{BASE}/site-index" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="seo-crawl-page">
+  <main class="seo-page-main">
+    <div class="container page-content seo-prose">
+      <h1>Band Nyx — official site index</h1>
+      <p>Canonical home: <a href="/">band-nyx.vercel.app press kit</a>. Instagram: <a href="https://instagram.com/band.nyx">@band.nyx</a>.</p>
+{chr(10).join(links_html)}
+      {BOOK}
+    </div>
+  </main>
+</body>
+</html>
+"""
+    (ROOT / "site-index.html").write_text(site_index, encoding="utf-8")
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in all_paths:
@@ -178,6 +242,8 @@ def main():
             pri = "1.0"
         elif p in ("booking", "band-nyx-vijayawada"):
             pri = "0.85"
+        elif p == "site-index":
+            pri = "0.75"
         elif p in intents:
             pri = "0.65"
         else:
