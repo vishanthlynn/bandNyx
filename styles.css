@@ -206,6 +206,14 @@ a {
   min-height: 100vh;
 }
 
+.seo-page-main {
+  padding: 6.5rem 0 4rem;
+}
+
+.seo-crawl-page .seo-page-main {
+  padding: 2.5rem 0 4rem;
+}
+
 .seo-crawl-page .seo-prose {
   max-width: 42rem;
   padding-bottom: 3rem;
