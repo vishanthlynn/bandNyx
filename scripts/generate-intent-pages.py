@@ -193,7 +193,7 @@ def main():
                   {"bands-near-me-andhra-pradesh"})
     events = sorted(f"events/{f.stem}" for f in (ROOT / "events").glob("*.html"))
     intents = [i[0] for i in INTENTS]
-    all_paths = list(dict.fromkeys(static + city + intents + events + ["site-index"]))
+    all_paths = list(dict.fromkeys(static + city + intents + events + ["site-index", "get-listed"]))
 
     # HTML site index for crawlers (not linked from press kit nav)
     sections = [
@@ -201,6 +201,7 @@ def main():
         ("City searches", city),
         ("Services & booking intent", intents),
         ("Events", events),
+        ("Listings & outreach", ["get-listed"]),
     ]
     links_html = []
     for heading, paths in sections:

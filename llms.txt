@@ -108,6 +108,8 @@ Yes — Band Nyx books shows across Andhra Pradesh including Kurnool. Public sit
 
 Full query → URL map (machine-readable): https://band-nyx.vercel.app/seo-query-map.json
 
+**List on other sites (you create these profiles):** https://band-nyx.vercel.app/get-listed — Google Business, JustDial, Sulekha, WedMeGood, Facebook; copy-paste text for venues.
+
 ## Technical SEO on press kit home (visible design unchanged)
 
 - Optimized `<title>`, meta description, OpenGraph, Twitter cards, canonical URL
