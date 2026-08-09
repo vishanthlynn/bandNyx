@@ -63,7 +63,7 @@
       "url": "https://band-nyx.vercel.app/live-music-bands-andhra-pradesh"
     },
     {
-      "query": "wedding band near me Vijayawada",
+      "query": "wedding band Vijayawada",
       "url": "https://band-nyx.vercel.app/wedding-band-vijayawada"
     },
     {
@@ -123,7 +123,7 @@
       "url": "https://band-nyx.vercel.app/corporate-event-band"
     },
     {
-      "query": "corporate band near me Hyderabad",
+      "query": "corporate band Hyderabad",
       "url": "https://band-nyx.vercel.app/corporate-band-hyderabad"
     },
     {
@@ -163,7 +163,7 @@
       "url": "https://band-nyx.vercel.app/book-live-band"
     },
     {
-      "query": "band booking near me",
+      "query": "band booking Vijayawada",
       "url": "https://band-nyx.vercel.app/book-live-band"
     },
     {
@@ -195,7 +195,7 @@
       "url": "https://band-nyx.vercel.app/telugu-live-band"
     },
     {
-      "query": "Telugu band near me",
+      "query": "Telugu band Vijayawada",
       "url": "https://band-nyx.vercel.app/telugu-live-band"
     },
     {
@@ -207,30 +207,6 @@
       "url": "https://band-nyx.vercel.app/telugu-live-band"
     },
     {
-      "query": "bands near me",
-      "url": "https://band-nyx.vercel.app/bands-near-me-andhra-pradesh"
-    },
-    {
-      "query": "live bands near me",
-      "url": "https://band-nyx.vercel.app/bands-near-me-andhra-pradesh"
-    },
-    {
-      "query": "music bands near me",
-      "url": "https://band-nyx.vercel.app/bands-near-me-andhra-pradesh"
-    },
-    {
-      "query": "local bands near me",
-      "url": "https://band-nyx.vercel.app/bands-near-me-andhra-pradesh"
-    },
-    {
-      "query": "best live music near me",
-      "url": "https://band-nyx.vercel.app/bands-near-me-andhra-pradesh"
-    },
-    {
-      "query": "party band near me",
-      "url": "https://band-nyx.vercel.app/party-band-private-events"
-    },
-    {
       "query": "live band for party",
       "url": "https://band-nyx.vercel.app/party-band-private-events"
     },
@@ -240,6 +216,10 @@
     },
     {
       "query": "band for private party",
+      "url": "https://band-nyx.vercel.app/party-band-private-events"
+    },
+    {
+      "query": "birthday live music",
       "url": "https://band-nyx.vercel.app/party-band-private-events"
     },
     {
@@ -255,15 +235,15 @@
       "url": "https://band-nyx.vercel.app/bollywood-live-band"
     },
     {
-      "query": "rock band near me",
-      "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
-    },
-    {
       "query": "rock band Vijayawada",
       "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
     },
     {
-      "query": "pop band near me",
+      "query": "pop band Vijayawada",
+      "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
+    },
+    {
+      "query": "live rock band Andhra Pradesh",
       "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
     },
     {
