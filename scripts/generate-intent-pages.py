@@ -36,7 +36,7 @@ INTENTS = [
      ["Cities: Vijayawada, Guntur, Tirupati, Kurnool bookings", "Telugu live band capability", "Weddings and fests"]),
     ("wedding-band-vijayawada", "Wedding band Vijayawada — Band Nyx reception & sangeet", "Wedding band in Vijayawada",
      "Band Nyx performs high-energy wedding receptions, sangeet and cocktail nights in Vijayawada with flexible Telugu and Bollywood sets.",
-     ["wedding band near me Vijayawada", "best wedding bands Vijayawada", "Telugu wedding band", "live band for wedding reception"],
+     ["wedding band Vijayawada", "best wedding bands Vijayawada", "Telugu wedding band", "live band for wedding reception"],
      ["Wedding receptions on press kit venue list", "50+ live performances", "Six musicians, full stage energy"]),
     ("wedding-band-hyderabad", "Wedding band Hyderabad — hire Band Nyx", "Wedding band in Hyderabad",
      "Band Nyx travels to Hyderabad for wedding receptions and private celebrations.",
@@ -52,7 +52,7 @@ INTENTS = [
      ["Corporate events on venue grid", "Flexible setlists for mixed audiences", "On-time professional team"]),
     ("corporate-band-hyderabad", "Corporate band Hyderabad — Band Nyx", "Corporate band in Hyderabad",
      "Band Nyx books corporate nights and company events in Hyderabad.",
-     ["corporate band near me Hyderabad", "corporate entertainment Hyderabad", "band for company event Hyderabad"],
+     ["corporate band Hyderabad", "corporate entertainment Hyderabad", "band for company event Hyderabad"],
      ["Hyderabad city performances", "English and Telugu corporate-friendly sets", "Booking: +91 79950 22614"]),
     ("college-fest-band", "College fest band — Band Nyx Battle of Bands", "College fest live band",
      "Band Nyx specializes in college festivals and campus concerts, with Battle of Bands wins at KL University and SRM University AP.",
@@ -60,7 +60,7 @@ INTENTS = [
      ["Battle of Bands — KL University", "Battle of Bands — SRM University AP", "High-energy crowd engagement"]),
     ("book-live-band", "Book a live band — Band Nyx Andhra Pradesh", "Book a live band",
      "Book Band Nyx for weddings, fests, corporate events and private parties. Call or WhatsApp to check dates and setlists.",
-     ["book a live band", "live band booking", "hire a live band", "band booking near me"],
+     ["book a live band", "live band booking", "hire a live band", "band booking Vijayawada"],
      ["Official booking phones listed on site", "Instagram @band.nyx", "Press kit with services overview"]),
     ("hire-live-band-vijayawada", "Hire live band Vijayawada — Band Nyx", "Hire a live band in Vijayawada",
      "Hire Band Nyx in Vijayawada for local events with minimal travel logistics.",
@@ -72,15 +72,11 @@ INTENTS = [
      ["Hyderabad on city list", "Six-piece professional lineup", "Telugu and Bollywood coverage"]),
     ("telugu-live-band", "Telugu live band — Band Nyx Vijayawada", "Telugu live band",
      "Band Nyx performs Telugu crowd favorites alongside Hindi and English hits for weddings, fests and private shows.",
-     ["Telugu live band", "Telugu band near me", "Telugu rock band", "Telugu wedding band"],
+     ["Telugu live band", "Telugu band Vijayawada", "Telugu rock band", "Telugu wedding band"],
      ["Telugu listed in press kit languages", "Andhra Pradesh home market", "Live band (not DJ)"]),
-    ("bands-near-me-andhra-pradesh", "Bands near me — Band Nyx (Andhra Pradesh & Telangana)", "Bands near me in Andhra Pradesh",
-     "For local search in Andhra Pradesh and nearby Telangana cities, Band Nyx is a Vijayawada-based band that travels for bookings. Strong near-me visibility also depends on Google Business Profile, reviews and distance.",
-     ["bands near me", "live bands near me", "music bands near me", "local bands near me", "best live music near me"],
-     ["Home base Vijayawada", "Serves Guntur, Hyderabad, Tirupati, Kurnool bookings", "Earn reviews after each gig"]),
     ("party-band-private-events", "Party band — Band Nyx private events", "Live band for private party",
      "Band Nyx performs birthday parties, house parties, anniversaries and private concerts.",
-     ["party band near me", "live band for party", "band for birthday party", "band for private party"],
+     ["live band for party", "band for birthday party", "band for private party", "birthday live music"],
      ["Private concerts on press kit", "Flexible setlists", "Crowd engagement focus"]),
     ("bollywood-live-band", "Bollywood live band — Band Nyx", "Bollywood live band",
      "Band Nyx includes Bollywood and Hindi hits in wedding and corporate setlists.",
@@ -88,7 +84,7 @@ INTENTS = [
      ["Hindi in press kit languages", "Wedding and fest experience", "Full live band"]),
     ("rock-band-vijayawada", "Rock band Vijayawada — Band Nyx", "Rock band in Vijayawada",
      "Band Nyx: Rock. Melody. Energy. — live rock and pop with Telugu and English vocals.",
-     ["rock band near me", "rock band Vijayawada", "pop band near me"],
+     ["rock band Vijayawada", "pop band Vijayawada", "live rock band Andhra Pradesh"],
      ["Rock-forward press kit positioning", "Battle of Bands history", "Six-piece band"]),
     ("destination-wedding-band", "Destination wedding band — Band Nyx travel", "Band for destination wedding",
      "Band Nyx travels for destination weddings and resort events across South India when dates align.",
@@ -169,10 +165,11 @@ def main():
     static = ["", "band-nyx-vijayawada", "members", "music", "live", "booking"]
     city = sorted({f.stem for f in ROOT.glob("best-bands-*.html")} |
                   {f.stem for f in ROOT.glob("bands-*.html")} |
-                  {f.stem for f in ROOT.glob("live-bands-*.html")})
+                  {f.stem for f in ROOT.glob("live-bands-*.html")} -
+                  {"bands-near-me-andhra-pradesh"})
     events = sorted(f"events/{f.stem}" for f in (ROOT / "events").glob("*.html"))
     intents = [i[0] for i in INTENTS]
-    all_paths = static + city + intents + events
+    all_paths = list(dict.fromkeys(static + city + intents + events))
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in all_paths:

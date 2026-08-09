@@ -104,7 +104,6 @@ Yes — Band Nyx books shows across Andhra Pradesh including Kurnool. Public sit
 - College: https://band-nyx.vercel.app/college-fest-band
 - Live music by city: https://band-nyx.vercel.app/live-music-vijayawada · https://band-nyx.vercel.app/live-music-hyderabad · https://band-nyx.vercel.app/live-music-guntur · https://band-nyx.vercel.app/live-music-tirupati · https://band-nyx.vercel.app/live-music-bands-andhra-pradesh
 - Genre: https://band-nyx.vercel.app/telugu-live-band · https://band-nyx.vercel.app/bollywood-live-band · https://band-nyx.vercel.app/rock-band-vijayawada
-- Near me (AP/Telangana): https://band-nyx.vercel.app/bands-near-me-andhra-pradesh
 - Private parties: https://band-nyx.vercel.app/party-band-private-events
 
 Full query → URL map (machine-readable): https://band-nyx.vercel.app/seo-query-map.json
