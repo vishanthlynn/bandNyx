@@ -95,3 +95,23 @@ Yes — these cities are listed in official band materials; see city-specific pa
 
 **Does Band Nyx perform in Kurnool?**  
 Yes — Band Nyx books shows across Andhra Pradesh including Kurnool. Public site lists 50+ performances; add named events to the site as media and venue links become available.
+
+## Booking & service intent pages (legitimate HTML pages — not hidden text)
+
+- Book / hire: https://band-nyx.vercel.app/book-live-band · https://band-nyx.vercel.app/hire-live-band-vijayawada · https://band-nyx.vercel.app/hire-live-band-hyderabad
+- Weddings: https://band-nyx.vercel.app/wedding-band-vijayawada · https://band-nyx.vercel.app/wedding-band-hyderabad · https://band-nyx.vercel.app/live-band-wedding · https://band-nyx.vercel.app/destination-wedding-band
+- Corporate: https://band-nyx.vercel.app/corporate-event-band · https://band-nyx.vercel.app/corporate-band-hyderabad
+- College: https://band-nyx.vercel.app/college-fest-band
+- Live music by city: https://band-nyx.vercel.app/live-music-vijayawada · https://band-nyx.vercel.app/live-music-hyderabad · https://band-nyx.vercel.app/live-music-guntur · https://band-nyx.vercel.app/live-music-tirupati · https://band-nyx.vercel.app/live-music-bands-andhra-pradesh
+- Genre: https://band-nyx.vercel.app/telugu-live-band · https://band-nyx.vercel.app/bollywood-live-band · https://band-nyx.vercel.app/rock-band-vijayawada
+- Near me (AP/Telangana): https://band-nyx.vercel.app/bands-near-me-andhra-pradesh
+- Private parties: https://band-nyx.vercel.app/party-band-private-events
+
+Full query → URL map (machine-readable): https://band-nyx.vercel.app/seo-query-map.json
+
+## Technical SEO on press kit home (visible design unchanged)
+
+- Optimized `<title>`, meta description, OpenGraph, Twitter cards, canonical URL
+- JSON-LD `@graph`: MusicGroup (members, areaServed, genres) + WebSite entity
+- XML sitemap lists all public pages — submit to Google Search Console and Bing Webmaster Tools
+- No hidden keyword blocks in the press kit footer (removed to avoid spam policies)

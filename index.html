@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Band Nyx is a professional live band based in Vijayawada, Andhra Pradesh. High-energy rock, pop, Telugu and English music for concerts, weddings, college fests and private shows across India." />
+  <meta name="description" content="Band Nyx (NYX) — professional six-piece live band in Vijayawada, Hyderabad and Andhra Pradesh. Rock, pop, Telugu and English music for weddings, corporate events, college fests and private shows. Book: +91 79950 22614." />
   <meta name="author" content="Vishanth" />
   <meta name="google-site-verification" content="4Ml4cbStXjqJVpoNSYSPP-_3X2SacOx-VcbIx6bXrfg" />
-  <title>Band Nyx — Live Band in Vijayawada, Andhra Pradesh</title>
+  <title>Band Nyx (NYX) | Live Band Vijayawada, Hyderabad &amp; Andhra Pradesh | Weddings, Corporate &amp; Events</title>
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="canonical" href="https://band-nyx.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Band Nyx" />
+  <meta property="og:title" content="Band Nyx (NYX) | Live Band in Vijayawada, Hyderabad &amp; Andhra Pradesh" />
+  <meta property="og:description" content="Professional live band for weddings, corporate events, college fests and private shows. Telugu, Hindi and English sets." />
+  <meta property="og:url" content="https://band-nyx.vercel.app/" />
+  <meta property="og:image" content="https://band-nyx.vercel.app/assets/hero-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Band Nyx (NYX) | Live Band Andhra Pradesh" />
+  <meta name="twitter:description" content="Weddings, corporate events, college fests — book Band Nyx." />
+  <meta name="twitter:image" content="https://band-nyx.vercel.app/assets/hero-bg.jpg" />
   <link rel="alternate" type="text/plain" href="llms.txt" title="Band Nyx — facts for search and AI" />
   <link rel="sitemap" type="application/xml" href="sitemap.xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,39 +30,70 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Band Nyx",
-    "alternateName": ["Band NYX", "Band Nyx Vijayawada", "Band Nyx Andhra Pradesh", "bandnyx"],
-    "description": "Band Nyx is a professional live band based in Vijayawada, Andhra Pradesh, performing high-energy rock, pop, Telugu and English music for concerts, events, weddings and private shows.",
-    "url": "https://band-nyx.vercel.app/",
-    "foundingDate": "2026",
-    "genre": ["Rock", "Pop", "Live music"],
-    "location": {
-      "@type": "Place",
-      "name": "Vijayawada, Andhra Pradesh",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Vijayawada",
-        "addressRegion": "Andhra Pradesh",
-        "addressCountry": "IN"
+    "@graph": [
+      {
+        "@type": "MusicGroup",
+        "@id": "https://band-nyx.vercel.app/#band-nyx",
+        "name": "Band Nyx",
+        "alternateName": ["NYX", "Band NYX", "Band Nyx Vijayawada", "Band Nyx Andhra Pradesh"],
+        "description": "Band Nyx is a professional live band based in Vijayawada, Andhra Pradesh, performing high-energy rock, pop, Telugu, Hindi and English music for concerts, weddings, corporate events, college fests and private shows.",
+        "url": "https://band-nyx.vercel.app/",
+        "foundingDate": "2026",
+        "genre": ["Live Music", "Rock", "Pop", "Telugu Music", "Bollywood"],
+        "knowsAbout": ["Wedding live music", "Corporate event entertainment", "College festival bands", "Telugu live bands", "Private concerts"],
+        "location": {
+          "@type": "Place",
+          "name": "Vijayawada, Andhra Pradesh",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vijayawada",
+            "addressRegion": "Andhra Pradesh",
+            "addressCountry": "IN"
+          }
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Vijayawada", "containedInPlace": {"@type": "State", "name": "Andhra Pradesh"}},
+          {"@type": "City", "name": "Hyderabad", "containedInPlace": {"@type": "State", "name": "Telangana"}},
+          {"@type": "City", "name": "Guntur"},
+          {"@type": "City", "name": "Tirupati"},
+          {"@type": "City", "name": "Kurnool"},
+          {"@type": "AdministrativeArea", "name": "Andhra Pradesh, India"}
+        ],
+        "member": [
+          {"@type": "Person", "name": "Murali", "roleName": "Vocals"},
+          {"@type": "Person", "name": "Bidit", "roleName": "Guitar"},
+          {"@type": "Person", "name": "Vishanth", "roleName": "Bass"},
+          {"@type": "Person", "name": "Justin", "roleName": "Guitar"},
+          {"@type": "Person", "name": "Charan", "roleName": "Drums"},
+          {"@type": "Person", "name": "Prasanna", "roleName": "Keys"}
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Vishanth",
+          "jobTitle": "Founder and Manager",
+          "sameAs": "https://www.instagram.com/lynnvishanth/"
+        },
+        "sameAs": [
+          "https://www.instagram.com/band.nyx/",
+          "https://www.instagram.com/lynnvishanth/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-79950-22614",
+          "contactType": "bookings",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Telugu", "Hindi"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://band-nyx.vercel.app/#website",
+        "url": "https://band-nyx.vercel.app/",
+        "name": "Band Nyx",
+        "publisher": {"@id": "https://band-nyx.vercel.app/#band-nyx"},
+        "inLanguage": "en"
       }
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Vishanth",
-      "jobTitle": "Founder and Manager",
-      "sameAs": "https://www.instagram.com/lynnvishanth/"
-    },
-    "sameAs": [
-      "https://www.instagram.com/band.nyx/",
-      "https://www.instagram.com/lynnvishanth/"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-79950-22614",
-      "contactType": "bookings",
-      "availableLanguage": ["English", "Telugu", "Hindi"]
-    }
+    ]
   }
   </script>
 </head>
@@ -261,7 +302,6 @@
       <span>Band Nyx · Est. 2026 · Vijayawada, AP</span>
       <span>Six Musicians · One Sound</span>
     </div>
-    <p class="visually-hidden" id="band-nyx-summary">Band Nyx — Live Band in Vijayawada, Andhra Pradesh. Band Nyx is a professional live band based in Vijayawada, Andhra Pradesh, performing high-energy rock, pop, Telugu and English music for concerts, events, weddings and private shows.</p>
     <p class="source-fact">Official: Band NYX founder and manager is Vishanth — https://www.instagram.com/lynnvishanth/</p>
   </footer>
 
