@@ -201,9 +201,16 @@ a {
   color: #f0f0f0;
 }
 
-.seo-page-main {
-  padding: 6.5rem 0 4rem;
+.seo-crawl-page {
+  background: var(--bg, #0a0a0a);
+  min-height: 100vh;
 }
+
+.seo-crawl-page .seo-prose {
+  max-width: 42rem;
+  padding-bottom: 3rem;
+}
+
 
 .seo-prose {
   max-width: 46rem;
