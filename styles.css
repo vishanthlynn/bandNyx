@@ -21,6 +21,31 @@ html {
   overflow-x: hidden;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+picture {
+  display: contents;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--red);
+  color: #fff;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
 body {
   margin: 0;
   color: var(--text);
@@ -84,9 +109,35 @@ a {
   position: fixed;
   inset: 0 0 auto;
   z-index: 50;
-  backdrop-filter: blur(14px);
-  background: rgba(7, 7, 7, 0.72);
+  background: rgba(7, 7, 7, 0.92);
   border-bottom: 1px solid var(--line);
+}
+
+.site-nav {
+  display: contents;
+}
+
+.seo-mini-header {
+  border-bottom: 1px solid var(--line);
+  padding: 0.85rem 0;
+}
+
+.seo-mini-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.seo-mini-nav a {
+  color: var(--muted);
+}
+
+.seo-mini-nav a:hover,
+.seo-mini-nav a:focus-visible {
+  color: var(--text);
 }
 
 .nav {
@@ -161,7 +212,20 @@ a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: #000 center top / cover no-repeat;
+  background: #000;
+}
+
+.hero-bg picture {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .hero-bg::after {
@@ -303,6 +367,16 @@ section {
   border-top: 1px solid var(--line);
 }
 
+#journey,
+#members,
+#venues,
+#booking,
+#testimonials,
+#contact {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 .section-bg {
   position: relative;
   isolation: isolate;
@@ -318,6 +392,13 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.22;
+}
+
+.about-photo::before {
+  background-image: image-set(
+    url("assets/about-bg.webp") type("image/webp"),
+    url("assets/about-bg.jpg") type("image/jpeg")
+  );
 }
 
 .section-bg::after {
@@ -650,6 +731,10 @@ section {
   position: absolute;
   inset: 0;
   background: center / cover no-repeat;
+  background-image: image-set(
+    url("assets/hero-bg.webp") type("image/webp"),
+    url("assets/hero-bg.jpg") type("image/jpeg")
+  );
   opacity: 0.35;
 }
 
@@ -705,14 +790,15 @@ section {
 }
 
 .source-fact {
-  margin: 0.35rem 0 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  font-size: 0.62rem;
-  line-height: 1.2;
-  letter-spacing: 0;
-  text-transform: none;
-  color: #2a2a2a;
-  text-align: center;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (max-width: 960px) {
