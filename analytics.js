@@ -9,6 +9,15 @@ document.addEventListener("click", (event) => {
     destination_host: new URL(link.href).hostname,
   };
 
+  detail.answered = false;
+  try {
+    const events = JSON.parse(localStorage.getItem("nyx-events") || "[]");
+    events.push({ ...detail, time: new Date().toISOString() });
+    localStorage.setItem("nyx-events", JSON.stringify(events.slice(-500)));
+  } catch {
+    // Storage can be unavailable in private browsing.
+  }
+
   window.dispatchEvent(new CustomEvent("nyx:conversion", { detail }));
 
   if (typeof window.gtag === "function") {

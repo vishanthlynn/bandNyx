@@ -1,11 +1,14 @@
 # https://band-nyx.vercel.app/robots.txt
 User-agent: *
 Allow: /
+Disallow: /admin
 
 User-agent: Googlebot
 Allow: /
+Disallow: /admin
 
 User-agent: Bingbot
 Allow: /
+Disallow: /admin
 
 Sitemap: https://band-nyx.vercel.app/sitemap.xml

@@ -18,6 +18,18 @@
       "route": "/booking",
       "placement": "contact",
       "message": "Hi Band Nyx, I want to check availability for an event. Ref: BOOKING-MAIN"
+    },
+    {
+      "code": "COLLEGE-FEST",
+      "route": "/college-fest-band-vijayawada",
+      "placement": "booking",
+      "message": "Hi Band Nyx, we are booking a college fest band in Vijayawada. Ref: COLLEGE-FEST"
+    },
+    {
+      "code": "CORPORATE-BOOK",
+      "route": "/corporate-event-band",
+      "placement": "booking",
+      "message": "Hi Band Nyx, we need a live band for a corporate event. Ref: CORPORATE-BOOK"
     }
   ]
 }

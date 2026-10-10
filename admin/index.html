@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Band Nyx booking pipeline</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .pipeline-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    .pipeline-table th, .pipeline-table td { border-bottom: 1px solid var(--line); text-align: left; padding: 0.45rem; vertical-align: top; }
+    .admin-grid { display: grid; gap: 1rem; }
+    .metric-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; }
+    .metric { border: 1px solid var(--line); padding: 0.75rem; }
+    .metric strong { display: block; font-size: 1.4rem; }
+  </style>
+</head>
+<body>
+  <main class="container page-content seo-prose">
+    <p class="eyebrow">Private · not for search engines</p>
+    <h1>Booking pipeline</h1>
+    <section id="lock">
+      <p>This dashboard stays locked until the hosting environment has <code>ADMIN_ACCESS_TOKEN</code> and you enter it. Lead records stay in this browser unless you export a CSV.</p>
+      <form id="unlock-form" class="booking-form">
+        <label>Admin token <input name="token" type="password" autocomplete="current-password" required /></label>
+        <button type="submit">Unlock</button>
+      </form>
+      <p id="lock-status" class="booking-status" role="status"></p>
+    </section>
+    <section id="workspace" hidden>
+      <div id="metrics" class="metric-row"></div>
+      <h2>Today</h2>
+      <div id="actions"></div>
+      <h2>Add an organizer you have actually found</h2>
+      <form id="lead-form" class="booking-form">
+        <label>Organization <input name="organization" required /></label>
+        <label>Contact name <input name="contactName" /></label>
+        <label>Public contact channel <input name="contactChannel" placeholder="Public email or page, if listed" /></label>
+        <label>Source URL <input name="sourceUrl" type="url" required /></label>
+        <label>Source date <input name="sourceDate" type="date" required /></label>
+        <label>Category
+          <select name="eventType">
+            <option value="college-fest">College festival</option>
+            <option value="corporate">Corporate planner</option>
+            <option value="agency">Event agency</option>
+            <option value="venue">Venue</option>
+            <option value="wedding">Wedding organizer</option>
+            <option value="other">Independent organizer</option>
+          </select>
+        </label>
+        <label>City <input name="city" /></label>
+        <label>Event date <input name="eventDate" type="date" /></label>
+        <label>Evidence of relevance <textarea name="evidence" required></textarea></label>
+        <label>Estimated value (INR) <input name="estimatedValue" inputmode="numeric" /></label>
+        <label>Next action <input name="nextAction" /></label>
+        <label>Next follow-up <input name="nextFollowUp" type="date" /></label>
+        <label>Notes <textarea name="notes"></textarea></label>
+        <button type="submit">Save lead</button>
+      </form>
+      <h2>Import and export</h2>
+      <p>Import only rows you collected. The file does not search the web.</p>
+      <input id="csv-file" type="file" accept=".csv,text/csv" />
+      <button id="export-csv" type="button">Export CSV</button>
+      <label>Search <input id="search" /></label>
+      <label>Status
+        <select id="status-filter"><option value="">All</option></select>
+      </label>
+      <div id="leads"></div>
+      <h2>Experiments</h2>
+      <form id="experiment-form" class="booking-form">
+        <label>Hypothesis <input name="hypothesis" required /></label>
+        <label>Change <input name="change" required /></label>
+        <label>Measurement window <input name="window" required /></label>
+        <label>Result <input name="result" placeholder="Leave blank until there is enough data" /></label>
+        <button type="submit">Record experiment</button>
+      </form>
+      <div id="experiments"></div>
+    </section>
+  </main>
+  <script src="/lib/booking/pipeline.js"></script>
+  <script src="/admin/app.js"></script>
+</body>
+</html>

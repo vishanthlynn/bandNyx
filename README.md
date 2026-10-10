@@ -35,6 +35,13 @@ See [`docs/search-intelligence.md`](docs/search-intelligence.md) for Google
 Cloud credentials, private report handling, competitor imports, verified gig
 requirements and WhatsApp attribution.
 
+Booking enquiries, delivery rules and the private organizer pipeline are
+documented in [`docs/booking-acquisition.md`](docs/booking-acquisition.md).
+
+```bash
+node --test tests/test_booking.js
+```
+
 ## Repository
 
 https://github.com/vishanthlynn/bandNyx

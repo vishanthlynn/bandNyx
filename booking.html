@@ -94,6 +94,34 @@
         <li>Crowd engagement from first song to encore</li>
       </ul>
 
+      <h2>Request a quotation</h2>
+      <form class="booking-form" method="post" action="/api/enquiry">
+        <label>Name <input name="name" autocomplete="name" required /></label>
+        <label>Phone <input name="phone" type="tel" autocomplete="tel" required /></label>
+        <label>Organization or event <input name="organization" /></label>
+        <label>Event type
+          <select name="eventType" required>
+            <option value="">Choose one</option>
+            <option value="college-fest">College festival</option>
+            <option value="corporate">Corporate event</option>
+            <option value="wedding">Wedding</option>
+            <option value="private">Private event</option>
+            <option value="cultural">Cultural show</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>Event date <input name="eventDate" type="date" required /></label>
+        <label>City <input name="city" required /></label>
+        <label>Venue <input name="venue" /></label>
+        <label>Estimated budget (optional) <input name="budget" /></label>
+        <label>Requirements <textarea name="requirements" rows="4"></textarea></label>
+        <label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off" /></label>
+        <button type="submit">Request quotation</button>
+      </form>
+      <p class="booking-status" role="status" hidden></p>
+      <p>You can also call or WhatsApp directly. A form submission is delivered only when the booking server confirms it.</p>
+      <p>Performance videos and setup details: <a href="live.html">live performances</a> · <a href="music.html">repertoire</a>. A separate technical rider file is not currently published.</p>
+
       <h2>Contact and booking</h2>
       <p><strong>Phone</strong><br />
       <a href="tel:+917995022614">+91 79950 22614</a><br />
@@ -123,6 +151,7 @@
     <!-- Official: Band Nyx founder and manager is Vishanth — https://www.instagram.com/lynnvishanth/ -->
   </footer>
   <script src="main.js" defer></script>
+  <script src="booking.js" defer></script>
   <script src="analytics.js" defer></script>
 </body>
 </html>
