@@ -1,110 +1,42 @@
 {
   "canonical_site": "https://band-nyx.vercel.app",
-  "future_domain": "https://bandnyx.com/",
+  "generated_from": "seo/query-map.json",
   "queries": [
     {
-      "query": "live music Vijayawada",
-      "url": "https://band-nyx.vercel.app/live-music-vijayawada"
+      "query": "band nyx",
+      "url": "https://band-nyx.vercel.app/"
     },
     {
-      "query": "live music bands Vijayawada",
-      "url": "https://band-nyx.vercel.app/live-music-vijayawada"
+      "query": "band nyx vijayawada",
+      "url": "https://band-nyx.vercel.app/"
     },
     {
-      "query": "bands in Vijayawada",
-      "url": "https://band-nyx.vercel.app/live-music-vijayawada"
+      "query": "live band in vijayawada",
+      "url": "https://band-nyx.vercel.app/band-nyx-vijayawada"
     },
     {
-      "query": "live music Hyderabad",
-      "url": "https://band-nyx.vercel.app/live-music-hyderabad"
+      "query": "hire live band vijayawada",
+      "url": "https://band-nyx.vercel.app/band-nyx-vijayawada"
     },
     {
-      "query": "live bands Hyderabad",
-      "url": "https://band-nyx.vercel.app/live-music-hyderabad"
+      "query": "band booking vijayawada",
+      "url": "https://band-nyx.vercel.app/band-nyx-vijayawada"
     },
     {
-      "query": "bands in Hyderabad",
-      "url": "https://band-nyx.vercel.app/live-music-hyderabad"
-    },
-    {
-      "query": "live music Guntur",
-      "url": "https://band-nyx.vercel.app/live-music-guntur"
-    },
-    {
-      "query": "bands Guntur",
-      "url": "https://band-nyx.vercel.app/live-music-guntur"
-    },
-    {
-      "query": "live bands Guntur",
-      "url": "https://band-nyx.vercel.app/live-music-guntur"
-    },
-    {
-      "query": "live music Tirupati",
-      "url": "https://band-nyx.vercel.app/live-music-tirupati"
-    },
-    {
-      "query": "bands Tirupati",
-      "url": "https://band-nyx.vercel.app/live-music-tirupati"
-    },
-    {
-      "query": "best bands Tirupati",
-      "url": "https://band-nyx.vercel.app/live-music-tirupati"
-    },
-    {
-      "query": "live music bands in Andhra Pradesh",
-      "url": "https://band-nyx.vercel.app/live-music-bands-andhra-pradesh"
-    },
-    {
-      "query": "best live bands Andhra Pradesh",
-      "url": "https://band-nyx.vercel.app/live-music-bands-andhra-pradesh"
-    },
-    {
-      "query": "professional bands Andhra Pradesh",
-      "url": "https://band-nyx.vercel.app/live-music-bands-andhra-pradesh"
-    },
-    {
-      "query": "wedding band Vijayawada",
+      "query": "wedding band vijayawada",
       "url": "https://band-nyx.vercel.app/wedding-band-vijayawada"
     },
     {
-      "query": "best wedding bands Vijayawada",
+      "query": "live music for wedding reception",
       "url": "https://band-nyx.vercel.app/wedding-band-vijayawada"
     },
     {
-      "query": "Telugu wedding band",
-      "url": "https://band-nyx.vercel.app/wedding-band-vijayawada"
+      "query": "college fest band vijayawada",
+      "url": "https://band-nyx.vercel.app/college-fest-band-vijayawada"
     },
     {
-      "query": "live band for wedding reception",
-      "url": "https://band-nyx.vercel.app/wedding-band-vijayawada"
-    },
-    {
-      "query": "wedding band Hyderabad",
-      "url": "https://band-nyx.vercel.app/wedding-band-hyderabad"
-    },
-    {
-      "query": "live band for wedding Hyderabad",
-      "url": "https://band-nyx.vercel.app/wedding-band-hyderabad"
-    },
-    {
-      "query": "wedding entertainment Hyderabad",
-      "url": "https://band-nyx.vercel.app/wedding-band-hyderabad"
-    },
-    {
-      "query": "live band for wedding",
-      "url": "https://band-nyx.vercel.app/live-band-wedding"
-    },
-    {
-      "query": "band for wedding reception",
-      "url": "https://band-nyx.vercel.app/live-band-wedding"
-    },
-    {
-      "query": "wedding music band",
-      "url": "https://band-nyx.vercel.app/live-band-wedding"
-    },
-    {
-      "query": "live music for wedding",
-      "url": "https://band-nyx.vercel.app/live-band-wedding"
+      "query": "band for college event vijayawada",
+      "url": "https://band-nyx.vercel.app/college-fest-band-vijayawada"
     },
     {
       "query": "corporate event band",
@@ -115,220 +47,52 @@
       "url": "https://band-nyx.vercel.app/corporate-event-band"
     },
     {
-      "query": "corporate entertainment band",
-      "url": "https://band-nyx.vercel.app/corporate-event-band"
-    },
-    {
-      "query": "band for office party",
-      "url": "https://band-nyx.vercel.app/corporate-event-band"
-    },
-    {
-      "query": "corporate band Hyderabad",
-      "url": "https://band-nyx.vercel.app/corporate-band-hyderabad"
-    },
-    {
-      "query": "corporate entertainment Hyderabad",
-      "url": "https://band-nyx.vercel.app/corporate-band-hyderabad"
-    },
-    {
-      "query": "band for company event Hyderabad",
-      "url": "https://band-nyx.vercel.app/corporate-band-hyderabad"
-    },
-    {
-      "query": "college fest band",
-      "url": "https://band-nyx.vercel.app/college-fest-band"
-    },
-    {
-      "query": "college fest live band",
-      "url": "https://band-nyx.vercel.app/college-fest-band"
-    },
-    {
-      "query": "band for college event",
-      "url": "https://band-nyx.vercel.app/college-fest-band"
-    },
-    {
-      "query": "live music for college fest",
-      "url": "https://band-nyx.vercel.app/college-fest-band"
-    },
-    {
-      "query": "book a live band",
-      "url": "https://band-nyx.vercel.app/book-live-band"
-    },
-    {
-      "query": "live band booking",
-      "url": "https://band-nyx.vercel.app/book-live-band"
-    },
-    {
-      "query": "hire a live band",
-      "url": "https://band-nyx.vercel.app/book-live-band"
-    },
-    {
-      "query": "band booking Vijayawada",
-      "url": "https://band-nyx.vercel.app/book-live-band"
-    },
-    {
-      "query": "hire band Vijayawada",
-      "url": "https://band-nyx.vercel.app/hire-live-band-vijayawada"
-    },
-    {
-      "query": "live band booking Vijayawada",
-      "url": "https://band-nyx.vercel.app/hire-live-band-vijayawada"
-    },
-    {
-      "query": "band booking Vijayawada",
-      "url": "https://band-nyx.vercel.app/hire-live-band-vijayawada"
-    },
-    {
-      "query": "hire band Hyderabad",
-      "url": "https://band-nyx.vercel.app/hire-live-band-hyderabad"
-    },
-    {
-      "query": "band booking Hyderabad",
-      "url": "https://band-nyx.vercel.app/hire-live-band-hyderabad"
-    },
-    {
-      "query": "live band booking Hyderabad",
-      "url": "https://band-nyx.vercel.app/hire-live-band-hyderabad"
-    },
-    {
-      "query": "Telugu live band",
+      "query": "telugu live band",
       "url": "https://band-nyx.vercel.app/telugu-live-band"
     },
     {
-      "query": "Telugu band Vijayawada",
+      "query": "telugu band vijayawada",
       "url": "https://band-nyx.vercel.app/telugu-live-band"
     },
     {
-      "query": "Telugu rock band",
-      "url": "https://band-nyx.vercel.app/telugu-live-band"
-    },
-    {
-      "query": "Telugu wedding band",
-      "url": "https://band-nyx.vercel.app/telugu-live-band"
-    },
-    {
-      "query": "live band for party",
-      "url": "https://band-nyx.vercel.app/party-band-private-events"
-    },
-    {
-      "query": "band for birthday party",
-      "url": "https://band-nyx.vercel.app/party-band-private-events"
-    },
-    {
-      "query": "band for private party",
-      "url": "https://band-nyx.vercel.app/party-band-private-events"
-    },
-    {
-      "query": "birthday live music",
-      "url": "https://band-nyx.vercel.app/party-band-private-events"
-    },
-    {
-      "query": "Bollywood live band",
+      "query": "bollywood live band",
       "url": "https://band-nyx.vercel.app/bollywood-live-band"
     },
     {
-      "query": "Hindi live band",
-      "url": "https://band-nyx.vercel.app/bollywood-live-band"
-    },
-    {
-      "query": "Bollywood wedding band",
-      "url": "https://band-nyx.vercel.app/bollywood-live-band"
-    },
-    {
-      "query": "rock band Vijayawada",
+      "query": "rock band vijayawada",
       "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
     },
     {
-      "query": "pop band Vijayawada",
-      "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
+      "query": "live band for private party",
+      "url": "https://band-nyx.vercel.app/party-band-private-events"
     },
     {
-      "query": "live rock band Andhra Pradesh",
-      "url": "https://band-nyx.vercel.app/rock-band-vijayawada"
+      "query": "live band for wedding",
+      "url": "https://band-nyx.vercel.app/live-band-wedding"
     },
     {
-      "query": "band for destination wedding",
+      "query": "destination wedding band",
       "url": "https://band-nyx.vercel.app/destination-wedding-band"
     },
     {
-      "query": "destination wedding live music",
-      "url": "https://band-nyx.vercel.app/destination-wedding-band"
+      "query": "live music hyderabad",
+      "url": "https://band-nyx.vercel.app/live-music-hyderabad"
     },
     {
-      "query": "resort event band",
-      "url": "https://band-nyx.vercel.app/destination-wedding-band"
+      "query": "live music guntur",
+      "url": "https://band-nyx.vercel.app/live-music-guntur"
     },
     {
-      "query": "wedding band Guntur",
-      "url": "https://band-nyx.vercel.app/wedding-band-guntur"
+      "query": "live music tirupati",
+      "url": "https://band-nyx.vercel.app/live-music-tirupati"
     },
     {
-      "query": "live band wedding Guntur",
-      "url": "https://band-nyx.vercel.app/wedding-band-guntur"
+      "query": "live music band andhra pradesh",
+      "url": "https://band-nyx.vercel.app/live-music-bands-andhra-pradesh"
     },
     {
-      "query": "Telugu wedding band Guntur",
-      "url": "https://band-nyx.vercel.app/wedding-band-guntur"
-    },
-    {
-      "query": "wedding band Tirupati",
-      "url": "https://band-nyx.vercel.app/wedding-band-tirupati"
-    },
-    {
-      "query": "live music wedding Tirupati",
-      "url": "https://band-nyx.vercel.app/wedding-band-tirupati"
-    },
-    {
-      "query": "college fest band Vijayawada",
-      "url": "https://band-nyx.vercel.app/college-fest-band-vijayawada"
-    },
-    {
-      "query": "band for college event Vijayawada",
-      "url": "https://band-nyx.vercel.app/college-fest-band-vijayawada"
-    },
-    {
-      "query": "university live band Vijayawada",
-      "url": "https://band-nyx.vercel.app/college-fest-band-vijayawada"
-    },
-    {
-      "query": "live band booking Vijayawada",
-      "url": "https://band-nyx.vercel.app/live-band-booking-andhra-pradesh"
-    },
-    {
-      "query": "live band booking Hyderabad",
-      "url": "https://band-nyx.vercel.app/live-band-booking-andhra-pradesh"
-    },
-    {
-      "query": "band booking Andhra Pradesh",
-      "url": "https://band-nyx.vercel.app/live-band-booking-andhra-pradesh"
-    },
-    {
-      "query": "hire live band",
-      "url": "https://band-nyx.vercel.app/live-band-booking-andhra-pradesh"
-    },
-    {
-      "query": "professional live band Vijayawada",
-      "url": "https://band-nyx.vercel.app/professional-live-band-vijayawada"
-    },
-    {
-      "query": "best live band Vijayawada",
-      "url": "https://band-nyx.vercel.app/professional-live-band-vijayawada"
-    },
-    {
-      "query": "top bands Vijayawada",
-      "url": "https://band-nyx.vercel.app/professional-live-band-vijayawada"
-    },
-    {
-      "query": "professional live band Hyderabad",
-      "url": "https://band-nyx.vercel.app/professional-live-band-hyderabad"
-    },
-    {
-      "query": "best live band Hyderabad",
-      "url": "https://band-nyx.vercel.app/professional-live-band-hyderabad"
-    },
-    {
-      "query": "hire band Hyderabad",
-      "url": "https://band-nyx.vercel.app/professional-live-band-hyderabad"
+      "query": "book band nyx",
+      "url": "https://band-nyx.vercel.app/booking"
     }
   ]
 }

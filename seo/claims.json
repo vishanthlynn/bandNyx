@@ -1,0 +1,48 @@
+{
+  "updated": "2026-10-11",
+  "claims": [
+    {
+      "id": "home-base",
+      "text": "Band Nyx is based in Vijayawada, Andhra Pradesh.",
+      "status": "verified",
+      "sources": [
+        "https://www.instagram.com/band.nyx/",
+        "https://band-nyx.vercel.app/band-nyx-vijayawada"
+      ]
+    },
+    {
+      "id": "lineup",
+      "text": "Band Nyx is a six-piece live band.",
+      "status": "verified",
+      "sources": [
+        "https://band-nyx.vercel.app/members"
+      ]
+    },
+    {
+      "id": "languages",
+      "text": "Band Nyx performs Telugu, Hindi and English music.",
+      "status": "verified",
+      "sources": [
+        "https://band-nyx.vercel.app/music"
+      ]
+    },
+    {
+      "id": "performances",
+      "text": "Band Nyx has performed more than 50 live shows.",
+      "status": "verified",
+      "sources": [
+        "https://band-nyx.vercel.app/live",
+        "https://www.instagram.com/band.nyx/"
+      ]
+    },
+    {
+      "id": "event-types",
+      "text": "Band Nyx performs at college festivals, weddings, corporate events and private shows.",
+      "status": "verified",
+      "sources": [
+        "https://band-nyx.vercel.app/",
+        "https://band-nyx.vercel.app/live"
+      ]
+    }
+  ]
+}

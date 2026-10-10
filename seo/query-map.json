@@ -1,0 +1,28 @@
+{
+  "canonical_site": "https://band-nyx.vercel.app",
+  "queries": [
+    {"query": "band nyx", "route": "/"},
+    {"query": "band nyx vijayawada", "route": "/"},
+    {"query": "live band in vijayawada", "route": "/band-nyx-vijayawada"},
+    {"query": "hire live band vijayawada", "route": "/band-nyx-vijayawada"},
+    {"query": "band booking vijayawada", "route": "/band-nyx-vijayawada"},
+    {"query": "wedding band vijayawada", "route": "/wedding-band-vijayawada"},
+    {"query": "live music for wedding reception", "route": "/wedding-band-vijayawada"},
+    {"query": "college fest band vijayawada", "route": "/college-fest-band-vijayawada"},
+    {"query": "band for college event vijayawada", "route": "/college-fest-band-vijayawada"},
+    {"query": "corporate event band", "route": "/corporate-event-band"},
+    {"query": "live band for corporate event", "route": "/corporate-event-band"},
+    {"query": "telugu live band", "route": "/telugu-live-band"},
+    {"query": "telugu band vijayawada", "route": "/telugu-live-band"},
+    {"query": "bollywood live band", "route": "/bollywood-live-band"},
+    {"query": "rock band vijayawada", "route": "/rock-band-vijayawada"},
+    {"query": "live band for private party", "route": "/party-band-private-events"},
+    {"query": "live band for wedding", "route": "/live-band-wedding"},
+    {"query": "destination wedding band", "route": "/destination-wedding-band"},
+    {"query": "live music hyderabad", "route": "/live-music-hyderabad"},
+    {"query": "live music guntur", "route": "/live-music-guntur"},
+    {"query": "live music tirupati", "route": "/live-music-tirupati"},
+    {"query": "live music band andhra pradesh", "route": "/live-music-bands-andhra-pradesh"},
+    {"query": "book band nyx", "route": "/booking"}
+  ]
+}

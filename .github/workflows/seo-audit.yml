@@ -1,0 +1,46 @@
+name: SEO quality gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate SEO registries
+        run: python -m scripts.search_intel validate-data
+
+      - name: Check generated artifacts
+        run: python -m scripts.search_intel sync
+
+      - name: Audit public pages
+        env:
+          SEO_BASE_REF: ${{ github.base_ref && format('origin/{0}', github.base_ref) || '' }}
+        run: python -m scripts.search_intel audit --json-output seo-audit.json
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit
+          path: seo-audit.json
+          if-no-files-found: ignore

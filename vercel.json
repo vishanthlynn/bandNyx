@@ -26,7 +26,10 @@
     { "source": "/book-live-band", "destination": "/booking", "permanent": true },
     { "source": "/live-band-booking-andhra-pradesh", "destination": "/booking", "permanent": true },
     { "source": "/college-fest-band", "destination": "/college-fest-band-vijayawada", "permanent": true },
-    { "source": "/corporate-band-hyderabad", "destination": "/corporate-event-band", "permanent": true }
+    { "source": "/corporate-band-hyderabad", "destination": "/corporate-event-band", "permanent": true },
+    { "source": "/wedding-band-guntur", "destination": "/live-band-wedding", "permanent": true },
+    { "source": "/wedding-band-hyderabad", "destination": "/live-band-wedding", "permanent": true },
+    { "source": "/wedding-band-tirupati", "destination": "/live-band-wedding", "permanent": true }
   ],
   "headers": [
     {
@@ -43,7 +46,7 @@
       ]
     },
     {
-      "source": "/(styles.css|main.js)",
+      "source": "/(styles.css|main.js|analytics.js)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
       ]

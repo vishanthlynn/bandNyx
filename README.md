@@ -4,18 +4,11 @@ Official press kit site for **Band NYX** — rock, melody, energy.
 
 ## Live site
 
-**https://vishanthlynn.github.io/bandNyx/**
+**https://band-nyx.vercel.app/**
 
-### Enable GitHub Pages (required once — fixes 404)
-
-The **failed** runs that mention `actions/deploy-pages@v4` are from an **old workflow**. The current workflow publishes to the **`gh-pages`** branch (see latest green runs).
-
-1. Open **https://github.com/vishanthlynn/bandNyx/settings/pages**
-2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
-3. **Branch:** `gh-pages` · **Folder:** `/ (root)` → **Save**
-4. Wait 2–5 minutes, then open **https://vishanthlynn.github.io/bandNyx/**
-
-To redeploy after changes: push to `main`, or **Actions** → **Deploy Band NYX site to GitHub Pages** → **Run workflow**.
+Vercel is the only canonical and indexable host. GitHub Pages deployment is
+intentionally disabled because it cannot enforce the redirects in
+`vercel.json`.
 
 ## Local preview
 
@@ -25,6 +18,22 @@ python3 -m http.server 8080
 ```
 
 Open http://localhost:8080
+
+## Search intelligence
+
+The repository includes an offline technical SEO quality gate and an optional
+weekly Google Search Console collector.
+
+```bash
+python3 -m scripts.search_intel validate-data
+python3 -m scripts.search_intel sync
+python3 -m scripts.search_intel audit
+python3 -m unittest discover -s tests -v
+```
+
+See [`docs/search-intelligence.md`](docs/search-intelligence.md) for Google
+Cloud credentials, private report handling, competitor imports, verified gig
+requirements and WhatsApp attribution.
 
 ## Repository
 

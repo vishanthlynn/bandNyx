@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "publication_requirements": {
+    "required_status": "verified",
+    "required_fields": [
+      "slug",
+      "name",
+      "date",
+      "venue",
+      "city",
+      "event_type",
+      "recap",
+      "evidence_urls"
+    ],
+    "minimum_evidence_urls": 1
+  },
+  "gigs": [
+    {
+      "slug": "battle-of-bands-kl-university",
+      "name": "Battle of Bands — KL University",
+      "status": "needs_evidence",
+      "date": null,
+      "venue": "KL University",
+      "city": "Vijayawada",
+      "region": "Andhra Pradesh",
+      "country": "IN",
+      "event_type": "college-fest",
+      "recap": "Band Nyx performed at the KL University Battle of Bands.",
+      "evidence_urls": []
+    },
+    {
+      "slug": "battle-of-bands-srm-university-ap",
+      "name": "Battle of Bands — SRM University AP",
+      "status": "needs_evidence",
+      "date": null,
+      "venue": "SRM University AP",
+      "city": "Amaravati",
+      "region": "Andhra Pradesh",
+      "country": "IN",
+      "event_type": "college-fest",
+      "recap": "Band Nyx performed at the SRM University AP Battle of Bands.",
+      "evidence_urls": []
+    },
+    {
+      "slug": "nyx-live-charlotte-usa",
+      "name": "Band Nyx live — Charlotte, USA",
+      "status": "needs_evidence",
+      "date": null,
+      "venue": null,
+      "city": "Charlotte",
+      "region": "North Carolina",
+      "country": "US",
+      "event_type": "live-show",
+      "recap": "Band Nyx performed live in Charlotte, North Carolina.",
+      "evidence_urls": []
+    },
+    {
+      "slug": "nyx-live-andhra-pradesh-tour",
+      "name": "Band Nyx live across Andhra Pradesh",
+      "status": "aggregate_only",
+      "date": null,
+      "venue": null,
+      "city": null,
+      "region": "Andhra Pradesh",
+      "country": "IN",
+      "event_type": "aggregate",
+      "recap": "An aggregate performance claim, not a single verifiable event.",
+      "evidence_urls": []
+    }
+  ]
+}

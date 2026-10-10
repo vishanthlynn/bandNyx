@@ -1,0 +1,15 @@
+{
+  "status": "awaiting-first-collection",
+  "site": "https://band-nyx.vercel.app/",
+  "privacy": "Raw Search Console rows are stored only as private GitHub Actions artifacts.",
+  "last_collected": null,
+  "totals": null,
+  "page_opportunities": [],
+  "sitemap": null,
+  "inspection": null,
+  "whatsapp_attribution": {
+    "status": "reference-codes-active",
+    "automatic_click_counts": false,
+    "reason": "Awaiting an approved GA4 measurement ID or Vercel event store."
+  }
+}

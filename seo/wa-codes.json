@@ -1,0 +1,23 @@
+{
+  "number": "917995022614",
+  "codes": [
+    {
+      "code": "HOME-CONTACT",
+      "route": "/",
+      "placement": "contact",
+      "message": "Hi Band Nyx, I want to enquire about a live show. Ref: HOME-CONTACT"
+    },
+    {
+      "code": "VJA-BOOK",
+      "route": "/band-nyx-vijayawada",
+      "placement": "booking",
+      "message": "Hi Band Nyx, I want to book a live band in Vijayawada. Ref: VJA-BOOK"
+    },
+    {
+      "code": "BOOKING-MAIN",
+      "route": "/booking",
+      "placement": "contact",
+      "message": "Hi Band Nyx, I want to check availability for an event. Ref: BOOKING-MAIN"
+    }
+  ]
+}

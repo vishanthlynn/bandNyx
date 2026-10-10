@@ -1,3 +1,6 @@
 .DS_Store
 .vercel
 assets/raw/
+seo-private/
+__pycache__/
+*.pyc
